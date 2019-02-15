@@ -21,11 +21,10 @@ class PokerTable extends Component{
     // We can't put this in our Deck class, because it's specific to our Hold em
     prepDeck(){
         this.cards.deck.shift(); // burn card
-        let dealCard = this.cards.deck.shift(); 
-        const card1 = dealCard;
-        const card2 = dealCard;
-        const card3 = dealCard;
-        const card4 = dealCard;
+        const card1 = this.cards.deck.shift();;
+        const card2 = this.cards.deck.shift();;
+        const card3 = this.cards.deck.shift();;
+        const card4 = this.cards.deck.shift();;
         // deck is now only 48, becuase we mutated this.deck when we ran shift 
         this.setState({
             playersHand: [card1, card3],
